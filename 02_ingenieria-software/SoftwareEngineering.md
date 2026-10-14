@@ -7,6 +7,7 @@ Esta sección reúne conceptos, enfoques y soluciones utilizados para construir 
 La documentación se organiza en cinco áreas principales: arquitectura del sistema, diseño de software, patrones de diseño, principios y buenas prácticas, y documentación y modelado.
 
 ---
+---
 
 ## 📚 Índice de contenidos
 
@@ -16,11 +17,13 @@ La documentación se organiza en cinco áreas principales: arquitectura del sist
   - [Creacionales](#-patrones-creacionales)
   - [Estructurales](#-patrones-estructurales)
   - [De comportamiento](#-patrones-de-comportamiento)
+- [⚙️ Metodologias de diseño](#-metodologias-de-diseño)
 - [✅ Principios y buenas prácticas](#-principios-y-buenas-prácticas)
 - [📝 Documentación y modelado](#-documentación-y-modelado)
 - [🧭 Cómo navegar por la documentación](#-cómo-navegar-por-la-documentación)
 - [🎯 Objetivos](#-objetivos)
 
+---
 ---
 
 ## 📐 Arquitectura
@@ -29,16 +32,11 @@ La arquitectura de software define la estructura fundamental de un sistema, sus 
 
 En esta sección se recogen diferentes estilos y enfoques arquitectónicos, cada uno con sus propias características, ventajas, limitaciones y contextos de aplicación.
 
+ESTABLECER UNA IMAGEN SOBRE ALGUNOS DE LOS ENFOQUES ARQUITECTONICOS QUE SE RECOMIENDA UTILIZAR EN EL DESARROLLO DE SOFTWARE.
 
-| Tema | Descripción |
-|---|---|
-| [Arquitectura monolítica](arquitectura/monolitica/README.md) | Organización de una aplicación como una unidad desplegable. |
-| [Microservicios](arquitectura/microservicios/README.md) | Descomposición del sistema en servicios independientes que colaboran entre sí. |
-| [Arquitectura hexagonal](arquitectura/hexagonal/README.md) | Aislamiento del dominio mediante puertos y adaptadores. |
-| [Clean Architecture](arquitectura/clean-architecture/README.md) | Organización del software mediante capas y dependencias orientadas hacia el núcleo de la aplicación. |
-| [Event-Driven Architecture](arquitectura/event-driven/README.md) | Comunicación y coordinación mediante eventos. |
-| [Arquitectura en capas](arquitectura/arquitectura-en-capas/README.md) | Separación del sistema en capas con responsabilidades diferenciadas. |
+Consultar el apartado [Arquitecturas del software](arquitecturas-software/SoftwareArchitectures.md)
 
+---
 ---
 
 ## 🧩 Diseño de software
@@ -47,13 +45,11 @@ El diseño de software se centra en cómo se organizan los componentes de una ap
 
 Los enfoques incluidos en esta sección ayudan a estructurar aplicaciones y separar la lógica de presentación, la lógica de negocio y otras responsabilidades.
 
-| Tema | Descripción |
-|---|---|
-| [MVC](diseno-de-software/mvc/) | Modelo-Vista-Controlador: separación del modelo, la interfaz y el control de las interacciones. |
-| [MVVM](diseno-de-software/mvvm/) | Model-View-ViewModel: separación de la interfaz y su estado o lógica de presentación. |
-| [MVP](diseno-de-software/mvp/) | Model-View-Presenter: coordinación entre la vista y la lógica de presentación mediante un presentador. |
-| [Separación de responsabilidades](diseno-de-software/separacion-de-responsabilidades/) | División del software en componentes con funciones y responsabilidades bien delimitadas. |
+ESTABLECER UNA IMAGEN SOBRE ALGUNOS DE LOS ENFOQUES DE DISEÑO QUE SE RECOMIENDA UTILIZAR EN EL DESARROLLO DE SOFTWARE.
 
+Consultar el apartado [Patrones Arquitectonicos del Software](patrones-arquitectonicos/SoftwareArchitectonicPatterns.md)
+
+---
 ---
 
 ## 🧱 Patrones de diseño
@@ -62,57 +58,41 @@ Los patrones de diseño son soluciones generales y reutilizables para problemas 
 
 Se clasifican según el tipo de problema que ayudan a resolver.
 
-### 🏭 Patrones creacionales
+ESTABLECER UNA IMAGEN SOBRE ALGUNOS DE LOS PATRONES DE DISEÑO QUE SE RECOMIENDA UTILIZAR EN EL DESARROLLO DE SOFTWARE.
 
-Se centran en los mecanismos de creación de objetos, buscando reducir el acoplamiento y facilitar la construcción de instancias.
+Consultar el apartado [Patrones de Diseño del Software](patrones-de-diseno/SoftwareDesignPatterns.md)
 
-| Patrón | Descripción |
-|---|---|
-| [Factory](patrones-de-diseno/creacionales/factory/) | Encapsula o centraliza la lógica de creación de objetos. |
-| [Builder](patrones-de-diseno/creacionales/builder/) | Permite construir objetos complejos paso a paso. |
-| [Singleton](patrones-de-diseno/creacionales/singleton/) | Restringe una clase a una única instancia accesible mediante un punto común. |
+---
+---
+## ⚙️ Metodologias de diseño
 
-### 🧩 Patrones estructurales
+Las metodologias de diseño orientan el desarrollo hacia un código legible, mantenible, reutilizable cuando corresponde y preparado para evolucionar sin introducir complejidad innecesaria.
 
-Describen cómo combinar clases y objetos para formar estructuras flexibles y simplificar sus relaciones.
+ESTABLECER UNA IMAGEN SOBRE ALGUNAS DE LAS METODOLOGIAS DE DISEÑO QUE SE RECOMIENDA UTILIZAR EN EL DESARROLLO DE SOFTWARE.
 
-| Patrón | Descripción |
-|---|---|
-| [Facade](patrones-de-diseno/estructurales/facade/) | Proporciona una interfaz simplificada para interactuar con un subsistema complejo. |
+Consultar el apartado [Metodologias de Diseño del Software](metodologias-software/SoftwareDesignMetodologies.md)
 
-### 🔄 Patrones de comportamiento
-
-Abordan la comunicación y la distribución de responsabilidades entre objetos, definiendo cómo colaboran para realizar determinadas operaciones.
-
-[Consultar los patrones de comportamiento](patrones-de-diseno/comportamiento/).
-
+---
 ---
 
 ## ✅ Principios y buenas prácticas
 
 Los principios y las buenas prácticas orientan el desarrollo hacia un código legible, mantenible, reutilizable cuando corresponde y preparado para evolucionar sin introducir complejidad innecesaria.
 
-| Tema | Descripción |
-|---|---|
-| [Clean Code](principios-y-buenas-practicas/clean-code/) | Prácticas para escribir código claro, expresivo y fácil de mantener. |
-| [SOLID](principios-y-buenas-practicas/solid/) | Cinco principios de diseño orientado a objetos que favorecen la separación de responsabilidades y la flexibilidad. |
-| [DRY](principios-y-buenas-practicas/dry/) | Evita duplicaciones innecesarias de conocimiento y lógica. |
-| [KISS](principios-y-buenas-practicas/kiss/) | Favorece soluciones sencillas frente a complejidad innecesaria. |
-| [YAGNI](principios-y-buenas-practicas/yagni/) | Evita implementar funcionalidades que todavía no son necesarias. |
+ESTABLECER UNA IMAGEN SOBRE LA DESCRIPCION DE SOLID POR EJEMPLO.
 
-Estos principios deben aplicarse con criterio y según el contexto: no constituyen reglas absolutas ni sustituyen el análisis de los requisitos del sistema.
+Consultar el apartado [Principios y Buenas prácticas del Software](principios-y-buenas-practicas/SoftwarePrinciplesAndBestPractices.md)
 
+---
 ---
 
 ## 📝 Documentación y modelado
 
 La documentación y el modelado permiten representar sistemas, comunicar decisiones técnicas y comprender la estructura y el comportamiento de una solución desde diferentes niveles de abstracción.
 
-| Tema | Descripción |
-|---|---|
-| [UML — Unified Modeling Language](documentacion-y-modelado/uml/) | Lenguaje de modelado visual para representar la estructura, el comportamiento y las interacciones de un sistema. |
-| [Diagramas C4](documentacion-y-modelado/diagramas-c4/) | Modelo de representación arquitectónica mediante diagramas de contexto, contenedores, componentes y código. |
+Consultar el apartado [Documentación y modelado del Software](documentacion-y-modelado/SoftwareDocumentationAndModeling.md)
 
+---
 ---
 
 ## 🧭 Cómo navegar por la documentación
@@ -124,6 +104,7 @@ La estructura sigue una separación conceptual:
 - **Arquitectura:** cómo se estructura el sistema y cómo se relacionan sus partes.
 - **Diseño de software:** cómo se organizan los componentes y sus responsabilidades.
 - **Patrones de diseño:** qué soluciones reutilizables pueden aplicarse a problemas recurrentes.
+- **Metodologias de diseño:** como desarrollar software de manera eficiente y eficaz.
 - **Principios y buenas prácticas:** cómo mejorar la calidad y mantenibilidad del código.
 - **Documentación y modelado:** cómo representar y comunicar la estructura del sistema.
 
@@ -146,7 +127,7 @@ Los distintos enfoques pueden complementarse entre sí. Por ejemplo, una aplicac
 ## 🔗 Navegación del repositorio
 
 - [Volver al índice principal de Tecnología](../README.md)
-- [Consultar las demás áreas del repositorio](../)
+- [Consultar las demás áreas del repositorio](../README.md)
 
 ---
 

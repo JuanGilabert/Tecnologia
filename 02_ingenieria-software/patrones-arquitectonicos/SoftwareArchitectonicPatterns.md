@@ -1,5 +1,8 @@
 # 🧩 Diseño de software
 
+ESTE README DE NIVEL 2 CONTENDRA BREVES DESCRIPCIONES E IMAGENES.
+ENLAZARA CON LOS README DE NIVEL 3 LOS CUALES DETALLARAN CON EXACTITUD LAS TECNOLOGIAS.
+
 Los patrones y principios de diseño de software ayudan a organizar los componentes de una aplicación, delimitar sus responsabilidades y reducir el acoplamiento entre ellos.
 
 - [**MVC (Model-View-Controller)**](mvc/ModelViewController_ArquitectonicPattern.md): separa la gestión de los datos, la presentación y el control de las interacciones de la aplicación.
@@ -10,3 +13,11 @@ Los patrones y principios de diseño de software ayudan a organizar los componen
 ![Diagrama UML del patrón MVP](assets/mvp-pattern_diagram.png)
 - [**Separación de responsabilidades**](separacion-de-responsabilidades/.md): distribuye las distintas funciones del sistema entre componentes con objetivos claros y bien delimitados.
 ![Diagrama UML de la separación de responsabilidades](assets/separacion-de-responsabilidades-pattern_diagram.png)
+
+
+| Tema | Descripción |
+|---|---|
+| [MVC](diseno-de-software/mvc/) | Modelo-Vista-Controlador: separación del modelo, la interfaz y el control de las interacciones. |
+| [MVVM](diseno-de-software/mvvm/) | Model-View-ViewModel: separación de la interfaz y su estado o lógica de presentación. |
+| [MVP](diseno-de-software/mvp/) | Model-View-Presenter: coordinación entre la vista y la lógica de presentación mediante un presentador. |
+| [Separación de responsabilidades](diseno-de-software/separacion-de-responsabilidades/) | División del software en componentes con funciones y responsabilidades bien delimitadas. |
